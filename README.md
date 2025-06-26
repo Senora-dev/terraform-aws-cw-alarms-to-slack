@@ -37,7 +37,7 @@ This Terraform module sets up CloudWatch alarms that send notifications to Slack
 
 ```hcl
 module "cloudwatch_alerts" {
-  source            = "path/to/module"
+  source            = "Senora-dev/cw-alarms-to-slack/aws"
   environment       = "prod"
   slack_webhook_url = "https://hooks.slack.com/services/XXX/YYY/ZZZ"
   tags = {
