@@ -30,7 +30,6 @@ resource "aws_cloudwatch_metric_alarm" "alarms" {
     {
       Environment = var.environment
       Name        = "${var.environment}-${each.value.name}"
-      SlackChannel = each.value.slack_channel
     }
   )
 }
